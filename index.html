@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esperança Da Serra — Natural Emerald · Bellerophon Privilege Award No. 163</title>
+  <meta name="description" content="A rare 19.15 kg natural Brazilian emerald on matrix, certified by Bellerophon Gemlab S.A.S., Paris. Recipient of the Bellerophon Privilege Award No. 163.">
+
+  <!-- OG Meta -->
+  <meta property="og:title" content="Esperança Da Serra — A Singular Natural Emerald">
+  <meta property="og:description" content="19.15 kg · Bahia, Brazil · Bellerophon Privilege Award No. 163 · Certified by Bellerophon Gemlab, Paris">
+  <meta property="og:image" content="Assets/hero.webp">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,300;1,400;1,600&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'green-deep': '#1C3A2A',
+            'green-mid':  '#2E5C3F',
+            'gold':       '#C9A96E',
+            'gold-light': '#E8D5A3',
+            'ivory':      '#FAF6EE',
+            'cream':      '#F2EAD3',
+            'charcoal':   '#2A2A2A',
+          },
+          fontFamily: {
+            'cormorant': ['Cormorant Garamond', 'Georgia', 'serif'],
+            'raleway':   ['Raleway', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Sticky nav styles (inlined to avoid FOUC) -->
+  <style>
+    #site-nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      background: rgba(28, 58, 42, 0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(201, 169, 110, 0.2);
+      padding: 1rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+      transform: translateY(0);
+    }
+    #site-nav.nav-visible { transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-ivory text-charcoal font-raleway">
+
+  <!-- ============================================================
+       STICKY NAV (appears after hero)
+  ============================================================ -->
+  <nav id="site-nav">
+    <p class="font-cormorant italic text-ivory text-lg tracking-wide">Esperança Da Serra</p>
+    <div class="hidden sm:flex gap-8">
+      <a href="#gallery"        class="nav-link" data-i18n="nav.gallery">Gallery</a>
+      <a href="#specifications" class="nav-link" data-i18n="nav.details">Details</a>
+      <a href="#certification"  class="nav-link" data-i18n="nav.certificate">Certificate</a>
+      <a href="#contact"        class="nav-link" data-i18n="nav.enquire">Enquire</a>
+    </div>
+    <a href="#contact" class="sm:hidden nav-link" data-i18n="nav.enquire" style="border: 1px solid rgba(201,169,110,0.5); padding: 0.4rem 0.9rem;">Enquire</a>
+    <button id="lang-toggle" class="nav-link" style="background:none;border:1px solid rgba(201,169,110,0.35);cursor:pointer;padding:0.4rem 0.7rem;margin-left:0.75rem;">PT</button>
+  </nav>
+
+  <!-- ============================================================
+       SECTION 1 — HERO
+  ============================================================ -->
+  <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+
+    <!-- Background image -->
+    <div class="absolute inset-0 z-0">
+      <img id="hero-bg"
+           src="Assets/hero.webp"
+           alt="Esperança Da Serra — Natural Emerald"
+           class="w-full h-full object-cover"
+           fetchpriority="high"
+           decoding="sync">
+      <div class="absolute inset-0 bg-green-deep" style="opacity: 0.68;"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center text-ivory px-6 max-w-4xl mx-auto" id="hero-content">
+
+      <p class="text-gold font-raleway font-light mb-6" data-i18n="hero.award"
+         style="font-size: 0.6rem; letter-spacing: 0.35em; text-transform: uppercase;">
+        Bellerophon Privilege Award &nbsp;·&nbsp; No. 163
+      </p>
+
+      <h1 class="font-cormorant italic font-light text-ivory leading-none mb-5"
+          style="font-size: clamp(3rem, 8vw, 7.5rem);">
+        Esperança Da Serra
+      </h1>
+
+      <p class="text-gold-light font-raleway font-light mb-12" data-i18n="hero.subtitle"
+         style="font-size: 0.65rem; letter-spacing: 0.28em; text-transform: uppercase;">
+        Natural Emerald &nbsp;·&nbsp; Brazil &nbsp;·&nbsp; 19.15 kg
+      </p>
+
+      <div class="gold-rule mx-auto w-28 mb-12"></div>
+
+      <div class="scroll-indicator">
+        <p class="text-gold-light font-raleway" data-i18n="hero.discover"
+           style="font-size: 0.55rem; letter-spacing: 0.3em; text-transform: uppercase; opacity: 0.7;">
+          Discover
+        </p>
+        <div class="scroll-arrow mt-3 mx-auto"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 2 — INTRODUCTION
+  ============================================================ -->
+  <section id="introduction" class="bg-ivory py-28 px-6">
+    <div class="max-w-2xl mx-auto text-center reveal">
+      <p class="text-gold mb-8" style="font-size: 0.75rem; letter-spacing: 0.5em;">✦</p>
+      <blockquote class="font-cormorant italic font-light text-charcoal leading-relaxed mb-10"
+                  data-i18n="intro.quote"
+                  style="font-size: clamp(1.45rem, 2.8vw, 2.1rem);">
+        "Rare in both size and quality, the possession of such natural emeralds
+        in matrix is a singular privilege."
+      </blockquote>
+      <div class="gold-rule mx-auto w-20 mb-7"></div>
+      <cite class="font-raleway not-italic text-gold" data-i18n="intro.cite"
+            style="font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase;">
+        Martial Curti &nbsp;·&nbsp; CEO &amp; Founder, Bellerophon Gemlab S.A.S.
+      </cite>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ============================================================
+       SECTION 3 — GALLERY
+  ============================================================ -->
+  <section id="gallery" class="bg-cream py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+
+      <!-- Heading -->
+      <div class="text-center mb-14 reveal">
+        <p class="text-gold font-raleway mb-3" data-i18n="gallery.label"
+           style="font-size: 0.6rem; letter-spacing: 0.32em; text-transform: uppercase;">
+          The Specimen
+        </p>
+        <h2 class="font-cormorant font-semibold text-charcoal" data-i18n="gallery.heading"
+            style="font-size: clamp(2rem, 4vw, 3rem);">
+          360° Photography
+        </h2>
+      </div>
+
+      <!-- Main Swiper -->
+      <div class="reveal">
+        <div class="swiper mainSwiper" style="max-width: 840px; margin: 0 auto;">
+          <div class="swiper-wrapper">
+            <!-- Populated by JS -->
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <!-- Thumbs Swiper -->
+        <div class="swiper thumbsSwiper mt-1" style="max-width: 840px; margin: 4px auto 0;">
+          <div class="swiper-wrapper" id="thumbs-wrapper">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <p class="text-center text-gold font-raleway mt-5" data-i18n="gallery.caption"
+           style="font-size: 0.55rem; letter-spacing: 0.25em; text-transform: uppercase;">
+          Professional gemmological photography &nbsp;·&nbsp; 31 high-resolution images
+          &nbsp;·&nbsp; Click to enlarge
+        </p>
+      </div>
+
+      <!-- Video -->
+      <div class="mt-24 reveal">
+        <div class="text-center mb-10">
+          <p class="text-gold font-raleway mb-3" data-i18n="gallery.video.label"
+             style="font-size: 0.6rem; letter-spacing: 0.32em; text-transform: uppercase;">
+            In Motion
+          </p>
+          <h2 class="font-cormorant font-semibold text-charcoal" data-i18n="gallery.video.heading"
+              style="font-size: clamp(1.75rem, 3.5vw, 2.5rem);">
+            A Closer Look
+          </h2>
+        </div>
+        <div class="video-container">
+          <video id="emerald-video"
+                 class="block"
+                 poster="Assets/poster.webp"
+                 playsinline
+                 muted
+                 loop
+                 preload="metadata">
+            <source src="Assets/Video/Copy%20of%20AKMUOLECIAU3.mp4" type="video/mp4">
+          </video>
+          <button id="video-play-btn" class="video-play-overlay" aria-label="Play / pause video">
+            <span class="play-icon">▶</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ============================================================
+       SECTION 4 — PROVENANCE & SPECIFICATIONS
+  ============================================================ -->
+  <section id="specifications" class="bg-green-deep py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+
+      <!-- Heading -->
+      <div class="text-center mb-16 reveal">
+        <p class="text-gold font-raleway mb-3" data-i18n="specs.label"
+           style="font-size: 0.6rem; letter-spacing: 0.32em; text-transform: uppercase;">
+          Provenance &amp; Details
+        </p>
+        <h2 class="font-cormorant font-semibold text-ivory" data-i18n="specs.heading"
+            style="font-size: clamp(2rem, 4vw, 3rem);">
+          The Stone
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+        <!-- Left: animated stats -->
+        <div class="reveal">
+          <div class="mb-10">
+            <div class="font-cormorant font-bold text-gold counter"
+                 data-target="19.15" data-decimals="2"
+                 style="font-size: clamp(3.5rem, 7vw, 5.5rem); line-height: 1;">
+              19.15
+            </div>
+            <p class="font-raleway text-gold-light mt-1" data-i18n="specs.kg"
+               style="font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase;">
+              Kilograms
+            </p>
+          </div>
+          <div class="gold-rule-h mb-10"></div>
+
+          <div class="mb-10">
+            <div class="font-cormorant font-bold text-gold"
+                 style="font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1;">
+              40 × 30 × 16
+            </div>
+            <p class="font-raleway text-gold-light mt-1" data-i18n="specs.cm"
+               style="font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase;">
+              Centimetres
+            </p>
+          </div>
+          <div class="gold-rule-h mb-10"></div>
+
+          <div class="mb-10">
+            <div class="font-cormorant font-bold text-gold counter"
+                 data-target="520" data-decimals="0"
+                 style="font-size: clamp(3.5rem, 7vw, 5.5rem); line-height: 1;">
+              520
+            </div>
+            <p class="font-raleway text-gold-light mt-1" data-i18n="specs.age"
+               style="font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase;">
+              Million Years Old
+            </p>
+          </div>
+          <div class="gold-rule-h mb-10"></div>
+
+          <div>
+            <div class="font-cormorant font-bold text-gold counter"
+                 data-target="163" data-decimals="0"
+                 style="font-size: clamp(3.5rem, 7vw, 5.5rem); line-height: 1;">
+              163
+            </div>
+            <p class="font-raleway text-gold-light mt-1" data-i18n="specs.award"
+               style="font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase;">
+              Privilege Award Number
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: spec table -->
+        <div class="reveal">
+          <div class="spec-row">
+            <span class="spec-label" data-i18n="specs.row.identification">Identification</span>
+            <span class="spec-value" data-i18n="specs.val.identification">Natural Emeralds on Matrix</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label" data-i18n="specs.row.color">Color</span>
+            <span class="spec-value" data-i18n="specs.val.color">Intense Vivid Green</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label" data-i18n="specs.row.clarity">Clarity</span>
+            <span class="spec-value" data-i18n="specs.val.clarity">Translucent</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label" data-i18n="specs.row.shape">Shape</span>
+            <span class="spec-value" data-i18n="specs.val.shape">Rough · Nature-Formed Octagonal</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label" data-i18n="specs.row.origin">Origin</span>
+            <span class="spec-value" data-i18n="specs.val.origin">Bahia State, Brazil</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label" data-i18n="specs.row.geoage">Geological Age</span>
+            <span class="spec-value" data-i18n="specs.val.geoage">~520 Million Years (Proterozoic)</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label" data-i18n="specs.row.fluorescence">Fluorescence</span>
+            <span class="spec-value" data-i18n="specs.val.fluorescence">None</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label" data-i18n="specs.row.treatment">Treatment</span>
+            <span class="spec-value" data-i18n="specs.val.treatment">Minor Clarity Modification</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label" data-i18n="specs.row.chemical">Chemical Formula</span>
+            <span class="spec-value">Be₃Al₂[Si₆O₁₈] + Cr, V, Fe</span>
+          </div>
+          <div class="spec-row" style="border-bottom: none;">
+            <span class="spec-label" data-i18n="specs.row.classification">Classification</span>
+            <span class="spec-value" data-i18n="specs.val.classification">Beryl · Cyclosilicate</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider-dark"></div>
+
+
+  <!-- ============================================================
+       SECTION 5 — CERTIFICATION
+  ============================================================ -->
+  <section id="certification" class="bg-ivory py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="text-center mb-16 reveal">
+        <p class="text-gold font-raleway mb-3" data-i18n="cert.label"
+           style="font-size: 0.6rem; letter-spacing: 0.32em; text-transform: uppercase;">
+          Documentation
+        </p>
+        <h2 class="font-cormorant font-semibold text-charcoal" data-i18n="cert.heading"
+            style="font-size: clamp(2rem, 4vw, 3rem);">
+          Laboratory Certification
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        <!-- Left: Lab photo -->
+        <div class="reveal">
+          <div class="gold-frame">
+            <img src="Assets/lab/lab-photo.webp"
+                 alt="Bellerophon Gemlab — Certificate A13896"
+                 class="w-full object-cover"
+                 loading="lazy"
+                 decoding="async">
+          </div>
+        </div>
+
+        <!-- Right: Cert details -->
+        <div class="reveal">
+          <p class="text-gold font-raleway mb-4" data-i18n="cert.certby"
+             style="font-size: 0.6rem; letter-spacing: 0.32em; text-transform: uppercase;">
+            Certified By
+          </p>
+          <h3 class="font-cormorant font-semibold text-charcoal mb-1" style="font-size: 2rem;">
+            Bellerophon Gemlab S.A.S.
+          </h3>
+          <p class="text-gold font-raleway mb-8"
+             style="font-size: 0.7rem; letter-spacing: 0.12em;">
+            16 Place Vendôme, 75001 Paris, France
+          </p>
+          <div class="gold-rule-h mb-8"></div>
+
+          <div class="space-y-5 mb-8">
+            <div class="flex justify-between items-baseline">
+              <span class="text-gold font-raleway" data-i18n="cert.report"
+                    style="font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase;">
+                Report Number
+              </span>
+              <span class="font-cormorant text-charcoal text-xl">A13896</span>
+            </div>
+            <div class="flex justify-between items-baseline">
+              <span class="text-gold font-raleway" data-i18n="cert.date"
+                    style="font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase;">
+                Date Issued
+              </span>
+              <span class="font-cormorant text-charcoal text-xl">November 4, 2024</span>
+            </div>
+            <div class="flex justify-between items-baseline">
+              <span class="text-gold font-raleway" data-i18n="cert.gemmologist"
+                    style="font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase;">
+                Chief Gemmologist
+              </span>
+              <span class="font-cormorant text-charcoal text-xl">M.P.H. Curti, GG</span>
+            </div>
+            <div class="flex justify-between items-baseline">
+              <span class="text-gold font-raleway" data-i18n="cert.manager"
+                    style="font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase;">
+                Laboratory Manager
+              </span>
+              <span class="font-cormorant text-charcoal text-xl">E. Marlin, FGA</span>
+            </div>
+          </div>
+
+          <div class="gold-rule-h mb-8"></div>
+          <p class="font-raleway font-light text-charcoal leading-relaxed mb-10" data-i18n="cert.analysis"
+             style="font-size: 0.85rem; opacity: 0.75;">
+            Comprehensive analysis performed using UV-VIS-NIR spectroscopy, Raman spectroscopy,
+            photoluminescence measurements, FTIR and EDXRF — the most rigorous suite of
+            non-destructive gemmological testing available.
+          </p>
+
+          <div class="flex gap-4 flex-wrap items-center">
+            <a href="Assets/Lab%20certificate/Certificate%20A13896.pdf"
+               download="Bellerophon_Certificate_A13896.pdf"
+               class="btn-gold-outline" data-i18n="cert.download">
+              ↓ &nbsp;Download Certificate
+            </a>
+            <a href="Assets/Lab%20certificate/Certificate%20A13896.pdf"
+               target="_blank" rel="noopener"
+               class="btn-text-gold" data-i18n="cert.preview">
+              Preview →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ============================================================
+       SECTION 6 — PRIVILEGE AWARD
+  ============================================================ -->
+  <section id="award" class="bg-green-deep py-24 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+
+      <div class="reveal">
+        <p class="text-gold font-raleway mb-4" data-i18n="award.label"
+           style="font-size: 0.6rem; letter-spacing: 0.32em; text-transform: uppercase;">
+          Distinction
+        </p>
+        <h2 class="font-cormorant font-semibold text-ivory mb-3"
+            style="font-size: clamp(2rem, 4vw, 3rem);">
+          Bellerophon Privilege Award
+        </h2>
+        <p class="font-cormorant italic text-gold-light mb-8" data-i18n="award.subtitle" style="font-size: 1.5rem;">
+          No. 163 — An Extremely Rare Distinction
+        </p>
+        <div class="gold-rule mx-auto w-24 mb-10"></div>
+        <p class="font-raleway font-light text-gold-light leading-relaxed max-w-2xl mx-auto mb-14" data-i18n="award.body"
+           style="font-size: 0.9rem; opacity: 0.85;">
+          The Bellerophon Privilege Award is bestowed only upon gemstones of extraordinary rarity —
+          specimens that transcend conventional classification and represent a singular achievement
+          of nature. Award No. 163 places this emerald among the most remarkable stones ever to
+          pass through the Bellerophon laboratories.
+        </p>
+      </div>
+
+      <!-- Three award photos -->
+      <div class="grid grid-cols-3 gap-3 max-w-xl mx-auto mb-12 reveal">
+        <div class="gold-frame-dark">
+          <img src="Assets/privilege/img-1.webp"
+               alt="Bellerophon Privilege Report"
+               class="w-full h-44 object-cover cursor-pointer glightbox-award"
+               loading="lazy" decoding="async"
+               data-gallery="award-gallery">
+        </div>
+        <div class="gold-frame-dark">
+          <img src="Assets/privilege/img-2.webp"
+               alt="Bellerophon Privilege Report"
+               class="w-full h-44 object-cover cursor-pointer glightbox-award"
+               loading="lazy" decoding="async"
+               data-gallery="award-gallery">
+        </div>
+        <div class="gold-frame-dark">
+          <img src="Assets/privilege/img-3.webp"
+               alt="Bellerophon Privilege Report"
+               class="w-full h-44 object-cover cursor-pointer glightbox-award"
+               loading="lazy" decoding="async"
+               data-gallery="award-gallery">
+        </div>
+      </div>
+
+      <div class="flex gap-4 justify-center flex-wrap reveal">
+        <a href="Assets/Privilege%20report/N.163%20(2).pdf"
+           download="Bellerophon_Privilege_Report_163.pdf"
+           class="btn-gold" data-i18n="award.download">
+          ↓ &nbsp;Download Privilege Report
+        </a>
+        <a href="Assets/Privilege%20report/N.163%20(2).pdf"
+           target="_blank" rel="noopener"
+           class="btn-text-gold-dark" data-i18n="award.preview">
+          Preview →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider-dark"></div>
+
+
+  <!-- ============================================================
+       SECTION 7 — THE STORY
+  ============================================================ -->
+  <section id="story" class="bg-ivory py-24 px-6">
+    <div class="max-w-3xl mx-auto">
+
+      <div class="text-center mb-16 reveal">
+        <p class="text-gold font-raleway mb-3" data-i18n="story.label"
+           style="font-size: 0.6rem; letter-spacing: 0.32em; text-transform: uppercase;">
+          History &amp; Legend
+        </p>
+        <h2 class="font-cormorant font-semibold text-charcoal" data-i18n="story.heading"
+            style="font-size: clamp(2rem, 4vw, 3rem);">
+          The Eternal Green
+        </h2>
+      </div>
+
+      <div class="reveal">
+        <p class="font-raleway font-light text-charcoal leading-relaxed mb-7" data-i18n-html="story.p1"
+           style="font-size: 0.95rem; opacity: 0.78;">
+          The emerald derives its name from the ancient Greek <em>Σμάραγδος</em> — smaragdus — a word
+          that has echoed through millennia of human fascination. Pliny the Elder captured its essence
+          in a single declaration that has never been surpassed:
+        </p>
+
+        <blockquote class="pull-quote">
+          <span data-i18n="story.pullquote">"...nothing greens greener."</span>
+          <cite data-i18n="story.pullcite">— Pliny the Elder</cite>
+        </blockquote>
+
+        <p class="font-raleway font-light text-charcoal leading-relaxed mb-7" data-i18n="story.p2"
+           style="font-size: 0.95rem; opacity: 0.78;">
+          For centuries, no stone has commanded the reverence afforded to the emerald. Cleopatra
+          adorned herself and her palace with them, gifted them to ambassadors as symbols of authority,
+          and had them carved with her portrait as tokens of sovereign power. In ancient belief, emeralds
+          were said to grant the power to foresee the future, reveal truth, and shield their bearer from
+          evil. Biblical tradition names emerald among the four precious stones bestowed upon King Solomon.
+        </p>
+
+        <div class="ornament-divider">✦ &nbsp;&nbsp;✦ &nbsp;&nbsp;✦</div>
+
+        <p class="font-raleway font-light text-charcoal leading-relaxed mb-7" data-i18n="story.p3"
+           style="font-size: 0.95rem; opacity: 0.78;">
+          The great emerald deposits of South America were first encountered by Spanish explorers in
+          the sixteenth century, who found the Inca civilisation in possession of stones of incomparable
+          beauty. Brazil — and specifically the state of Bahia — emerged as one of the world's most
+          significant sources. The region of Campo Formoso and Pindobaçu, approximately 400 kilometres
+          from Salvador, has yielded some of the finest specimens ever documented.
+        </p>
+
+        <p class="font-raleway font-light text-charcoal leading-relaxed mb-7" data-i18n-html="story.p4"
+           style="font-size: 0.95rem; opacity: 0.78;">
+          <em>Esperança Da Serra</em> — Hope of the Mountain Range — was formed approximately
+          520 million years ago during the Proterozoic era, within the serpentine rocks of the
+          Campo Formoso granite batholith. Its vivid chromium-driven green, its translucent clarity,
+          and its exceptional mass of 19.15 kilograms place it in a category occupied by only the
+          rarest specimens in recorded gemmological history.
+        </p>
+
+        <div class="ornament-divider">✦ &nbsp;&nbsp;✦ &nbsp;&nbsp;✦</div>
+
+        <p class="font-raleway font-light text-charcoal leading-relaxed" data-i18n="story.p5"
+           style="font-size: 0.95rem; opacity: 0.78;">
+          Today, Brazilian emerald deposits of this calibre are no longer actively exploited. The stone
+          before you is not merely a gemstone — it is a geological monument, a piece of Earth's deep
+          history, preserved in the most vivid green nature has ever produced.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ============================================================
+       SECTION 8 — CONTACT & CTA
+  ============================================================ -->
+  <section id="contact" class="bg-green-deep py-28 px-6">
+    <div class="max-w-2xl mx-auto text-center reveal">
+
+      <p class="text-gold font-raleway mb-4" data-i18n="contact.label"
+         style="font-size: 0.6rem; letter-spacing: 0.32em; text-transform: uppercase;">
+        Acquisition
+      </p>
+      <h2 class="font-cormorant font-semibold text-ivory mb-6" data-i18n="contact.heading"
+          style="font-size: clamp(2rem, 4vw, 3rem);">
+        Enquire About This Piece
+      </h2>
+      <div class="gold-rule mx-auto w-20 mb-8"></div>
+      <p class="font-raleway font-light text-gold-light leading-relaxed mb-14" data-i18n="contact.body"
+         style="font-size: 0.9rem; opacity: 0.85;">
+        For serious inquiries, private viewings, or further documentation,
+        please reach us directly. We welcome correspondence from collectors,
+        institutions, and serious buyers worldwide.
+      </p>
+
+      <div class="flex gap-5 justify-center flex-wrap">
+        <a href="mailto:lukas@usaris.lt"
+           class="btn-gold-outline-large" data-i18n="contact.email">
+          ✉ &nbsp;Send an Enquiry
+        </a>
+        <a href="https://wa.me/37065024544"
+           target="_blank" rel="noopener noreferrer"
+           class="btn-gold-large">
+          <svg class="inline w-4 h-4 mr-2 -mt-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="bg-charcoal py-12 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-left">
+          <p class="font-cormorant italic text-ivory" style="font-size: 1.25rem;">
+            Esperança Da Serra
+          </p>
+          <p class="text-gold font-raleway mt-1" data-i18n="footer.tagline"
+             style="font-size: 0.55rem; letter-spacing: 0.22em; text-transform: uppercase;">
+            A Singular Privilege
+          </p>
+        </div>
+        <div class="text-center">
+          <p class="text-gold" style="font-size: 0.75rem; letter-spacing: 0.4em; opacity: 0.5;">✦</p>
+        </div>
+        <div class="text-right">
+          <p class="font-raleway" data-i18n="footer.rights" style="font-size: 0.6rem; color: #555;">
+            © 2024 · All rights reserved
+          </p>
+          <p class="font-raleway mt-1" style="font-size: 0.55rem; color: #444;">
+            Bellerophon Gemlab Certificate A13896 &nbsp;·&nbsp; Privilege No. 163
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
